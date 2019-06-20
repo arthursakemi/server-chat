@@ -1,3 +1,4 @@
+console.log('[controllers ... OK]')
 const express = require('express'),
     router = express.Router()
 

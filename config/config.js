@@ -20,3 +20,4 @@
 
         return app
     }
+    console.log('[configs ... OK]')
