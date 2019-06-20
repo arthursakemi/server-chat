@@ -1,4 +1,5 @@
     const express = require('express')
+    require('../model/mongoose')
 
     module.exports.setUpServer = () => {
         const app = express()
