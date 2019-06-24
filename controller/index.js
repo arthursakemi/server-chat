@@ -1,4 +1,4 @@
-console.log('[controllers ... OK]')
+console.log('\x1b[32m', '[controllers ... OK]')
 const express = require('express'),
     router = express.Router()
 
