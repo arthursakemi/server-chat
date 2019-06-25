@@ -20,4 +20,4 @@
 
         return app
     }
-    console.log('\x1b[32m', '  [configs ... OK]')
+    console.log(' -> [configs ... OK]')
