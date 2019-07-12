@@ -11,7 +11,7 @@ router.use('/chat', logMiddleware, (req, res) => {
 })
 
 router.use('/', logMiddleware, (req, res) => {
-    res.send('página de login')
+    res.send('.')
 })
 
 
