@@ -1,19 +1,20 @@
 console.log(' -> [controllers ... OK]')
+const path = require('path')
 const express = require('express'),
     router = express.Router()
 
-//Middlewares
+const socket = require('./chat/socket')
+
+    //Middlewares
 const logMiddleware = require('../middlewares/logger')
 
 // Routes in use
+
+router.use('/', logMiddleware, socket)
+        
 router.use('/chat', logMiddleware, (req, res) => {
     res.send('página de chat')
 })
-
-router.use('/', logMiddleware, (req, res) => {
-    res.send('.')
-})
-
 
 // 404 setup
 router.use('*', (req, res) => {

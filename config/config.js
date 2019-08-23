@@ -11,7 +11,7 @@
             next();
         });
 
-        app.use(express.static('./public'))
+        // app.use('/', express.static(path.join('../', '/public', 'html')))
 
         app.use(bodyParser.json())
         app.use(bodyParser.urlencoded({ extended: true }))
